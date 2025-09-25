@@ -3,4 +3,11 @@ const conselhos =[
     "a persistencia realiza o impossivel .","aprenda algo novo hoje.",
     "seja gentil com todos que encontra ."
 ]
-console.log("arquivode script carregado.array de conselhos pronto.");
+const conselhotexto = document.getElementById('conselho');
+const novoconselhobtn = document.getElementById('novoconselhobtn');
+function gerarconselho() {
+    //BUG INTENCIONAL AQUI 
+    const indice = Math.floor(Math.random() * (conselhos.length));
+    conselhotexto,textcontent = conselhos [indice];
+}
+novoconselhobtn.addeventlistener('click', gerarconcelho);
